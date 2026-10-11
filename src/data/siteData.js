@@ -1,3 +1,11 @@
+import samflixyLogo from "../assets/samflixy.png";
+import samzoneLogo from "../assets/samzone.png";
+import sm9Logo from "../assets/sm9-logo.png";
+import samsypayLogo from "../assets/samsypay.png";
+import utilitiesLogo from "../assets/samsy-utilities.png";
+import samsytalkLogo from "../assets/samsytalk.png";
+import aitoolsLogo from "../assets/samsy-ai-tools.png";
+
 // ============================================================
 //  ALL EDITABLE CONTENT LIVES HERE.
 //  Change text, links, numbers, news etc. in this one file.
@@ -41,17 +49,18 @@ export const market = [
 ];
 
 export const services = [
-  { icon: "wallet", title: "Samsy Pay", text: "Payments & Wallet", desc: "Send, receive and store digital value with a secure wallet built for India and the world." },
-  { icon: "chat", title: "Samsy Tok", text: "Social & Content", desc: "A social platform where creators own their content and audience." },
-  { icon: "cart", title: "E-Commerce", text: "Shop & Grow", desc: "Marketplace tools that help MSMEs sell online and reach new customers." },
-  { icon: "ai", title: "AI Tools", text: "Smart Solutions", desc: "AI-powered tools for writing, design, analytics and automation." },
-  { icon: "play", title: "OTT Platform", text: "Entertainment", desc: "Stream movies, shows and regional content on the Samsy network." },
-  { icon: "bill", title: "Utilities", text: "Bills & Services", desc: "Pay bills, recharge and access everyday services in one place." },
+  { icon: "wallet", title: "Samsy Pay", text: "Payments & Wallet", desc: "Send, receive and store digital value with a secure wallet built for India and the world.", logo: samsypayLogo },
+  { icon: "chat", title: "Samsy Talk", text: "Social & Content", desc: "A social platform where creators own their content and audience.", logo: samsytalkLogo },
+  { icon: "cart", title: "Samzone (E-Commerce)", text: "Shop & Grow", desc: "Marketplace tools that help MSMEs sell online and reach new customers.", logo: samzoneLogo },
+  { icon: "ai", title: "Samsy AI Tools", text: "Smart Solutions", desc: "AI-powered tools for writing, design, analytics and automation.", logo: aitoolsLogo },
+  { icon: "play", title: "Samflixy (OTT Platform)", text: "Entertainment", desc: "Stream movies, shows and regional content on Samflixy, Samsy's next-gen streaming platform.", logo: samflixyLogo },
+  { icon: "bill", title: "Samsy Utilities", text: "Bills & Services", desc: "Pay bills, recharge and access everyday services in one place.", logo: utilitiesLogo },
+  { icon: "sparkles", title: "Samsy Makeover", text: "Beauty & Lifestyle", desc: "Premium grooming, salon and beauty wellness services with seamless digital appointments and payments." },
 ];
 
 export const tokens = {
   smz: { name: "SMZ Token", sub: "Utility Token for the Samsy Ecosystem" },
-  sm9: { name: "SM9 Project", sub: "Next Gen Blockchain Infrastructure" },
+  sm9: { name: "SM9 Project", sub: "Next Gen Blockchain Infrastructure", logo: sm9Logo },
 };
 
 export const about = {
@@ -66,6 +75,9 @@ export const about = {
   quote: "My dream is to build a digital ecosystem that gives every individual, every freelancer and every MSME a fair chance to grow and succeed.",
   founder: "Pradip Jadhav",
   founderRole: "Founder, Samsy Uni Private Limited & Samsy Capital Limited",
+  instagram: "https://www.instagram.com/pradipjadhav_1/",
+  linkedin: "https://www.linkedin.com/in/pradipjadhavofficial",
+  youtube: "https://youtu.be/SsihN2Emehw?feature=shared",
 };
 
 export const news = [
@@ -84,19 +96,16 @@ export const quickLinks = [
 ];
 
 export const socials = [
-  { name: "Telegram", href: "https://t.me/" },
-  { name: "X", href: "https://x.com/" },
-  { name: "YouTube", href: "https://youtube.com/" },
-  { name: "LinkedIn", href: "https://linkedin.com/" },
-  { name: "Instagram", href: "https://instagram.com/" },
-  { name: "Facebook", href: "https://facebook.com/" },
+  { name: "Instagram", href: "https://www.instagram.com/pradipjadhav_1/" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/pradipjadhavofficial" },
+  { name: "YouTube", href: "https://youtu.be/SsihN2Emehw?feature=shared" },
 ];
 
 export const roadmap = [
   { phase: "Phase 1", period: "2024", title: "Foundation", status: "done", items: ["Company formation", "Concept & research", "Core team onboarding"] },
   { phase: "Phase 2", period: "2025", title: "Testnet", status: "done", items: ["Samsy testnet launch", "Wallet beta", "Community building"] },
   { phase: "Phase 3", period: "2026", title: "Mainnet & Listing", status: "current", items: ["Mainnet launch", "SMZ exchange listing", "Samsy Pay rollout"] },
-  { phase: "Phase 4", period: "2027", title: "Ecosystem Expansion", status: "next", items: ["Samsy Tok & OTT launch", "MSME marketplace", "AI tools suite"] },
+  { phase: "Phase 4", period: "2027", title: "Ecosystem Expansion", status: "next", items: ["Samsy Talk & OTT launch", "MSME marketplace", "AI tools suite"] },
   { phase: "Phase 5", period: "2028+", title: "Global Scale", status: "next", items: ["50+ countries", "100M users target", "Cross-chain bridges"] },
 ];
 

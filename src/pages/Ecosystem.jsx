@@ -11,7 +11,13 @@ export default function Ecosystem() {
         <div className="card-grid card-grid--2">
           {services.map((s) => (
             <article className="card" key={s.title}>
-              <span className="card__icon"><Icon name={s.icon} size={24} /></span>
+              <span className="card__icon">
+                {s.logo ? (
+                  <img src={s.logo} alt={s.title} className="card__service-logo" />
+                ) : (
+                  <Icon name={s.icon} size={24} />
+                )}
+              </span>
               <h3>{s.title}</h3>
               <small className="muted">{s.text}</small>
               <p>{s.desc}</p>

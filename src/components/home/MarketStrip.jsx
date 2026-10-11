@@ -1,9 +1,18 @@
 import { Link } from "react-router-dom";
 import Sparkline from "../Sparkline.jsx";
 import logo from "../../assets/logo.svg";
+import sm9Logo from "../../assets/sm9-logo.png";
 import { market } from "../../data/siteData.js";
 
 function Coin({ type, symbol }) {
+  if (symbol === "SM9") {
+    return (
+      <span className="coin coin--samsy" style={{ padding: 0, overflow: "hidden" }}>
+        <img src={sm9Logo} alt={symbol} style={{ objectFit: "cover" }} />
+      </span>
+    );
+  }
+
   if (type === "samsy") {
     return (
       <span className="coin coin--samsy">

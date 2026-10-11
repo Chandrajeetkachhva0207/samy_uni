@@ -1,6 +1,6 @@
 import PageHero from "../components/PageHero.jsx";
 import Icon from "../components/Icon.jsx";
-import eagle from "../assets/eagle.svg";
+import sm9Logo from "../assets/sm9-logo.png";
 
 const features = [
   { icon: "shield", title: "Secure by Design", text: "Audited consensus and smart-contract layer." },
@@ -15,7 +15,7 @@ export default function SM9Project() {
       <PageHero eyebrow="SM9 PROJECT" title="Next Gen Blockchain Infrastructure" subtitle="The core network that powers every product in the Samsy ecosystem." />
       <section className="section container two-col">
         <div className="panel panel--gold token-hero">
-          <img src={eagle} alt="SM9" />
+          <img src={sm9Logo} alt="SM9 Logo" />
           <div><strong className="big">SM9</strong><span className="muted-light">Samsy Blockchain Infrastructure</span></div>
         </div>
         <div className="card-grid card-grid--2">

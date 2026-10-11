@@ -1,6 +1,6 @@
 import PageHero from "../components/PageHero.jsx";
 import Icon from "../components/Icon.jsx";
-import founderImg from "../assets/founder.svg";
+import founderImg from "../assets/founder.jpg";
 import { about } from "../data/siteData.js";
 
 const values = [
@@ -55,6 +55,30 @@ export default function About() {
           <h2>{about.founder}</h2>
           <p className="quote">“{about.quote}”</p>
           <p className="muted">{about.founderRole}</p>
+          <div style={{ marginTop: "16px", display: "flex", flexWrap: "wrap", gap: "10px" }}>
+            {about.instagram && (
+              <a
+                href={about.instagram}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn--outline btn--sm"
+                style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}
+              >
+                <Icon name="instagram" size={16} /> Follow on Instagram
+              </a>
+            )}
+            {about.linkedin && (
+              <a
+                href={about.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn--outline btn--sm"
+                style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}
+              >
+                <Icon name="linkedin" size={16} /> Connect on LinkedIn
+              </a>
+            )}
+          </div>
         </div>
       </section>
     </>

@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import Logo from "./Logo.jsx";
 import Icon from "./Icon.jsx";
-import { navLinks, site } from "../data/siteData.js";
+import { about, navLinks, site } from "../data/siteData.js";
 
 export default function Footer() {
   return (
@@ -63,6 +63,48 @@ export default function Footer() {
             </span>
             <span>{site.website}</span>
           </a>
+
+          {about.instagram && (
+            <a
+              className="footer__contact-link"
+              href={about.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="footer__icon">
+                <Icon name="instagram" size={17} />
+              </span>
+              <span>Instagram: @pradipjadhav_1</span>
+            </a>
+          )}
+
+          {about.linkedin && (
+            <a
+              className="footer__contact-link"
+              href={about.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="footer__icon">
+                <Icon name="linkedin" size={17} />
+              </span>
+              <span>LinkedIn: Pradip Jadhav</span>
+            </a>
+          )}
+
+          {about.youtube && (
+            <a
+              className="footer__contact-link"
+              href={about.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="footer__icon">
+                <Icon name="youtube" size={17} />
+              </span>
+              <span>YouTube: Watch Video</span>
+            </a>
+          )}
         </div>
 
         {/* Location / identity column */}

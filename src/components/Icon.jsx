@@ -2,6 +2,7 @@ import {
   ShieldCheck, Fingerprint, WalletCards, Users, Wallet, MessageCircle, ShoppingCart,
   Bot, PlayCircle, ReceiptText, FileText, Route, Search, CircleHelp, Send, Youtube,
   Linkedin, Instagram, Facebook, Mail, Globe, Phone, MapPin, Bell, Check, Clock,
+  Sparkles,
 } from "lucide-react";
 
 const map = {
@@ -10,7 +11,7 @@ const map = {
   bill: ReceiptText, doc: FileText, road: Route, search: Search, faq: CircleHelp,
   telegram: Send, youtube: Youtube, linkedin: Linkedin, instagram: Instagram,
   facebook: Facebook, mail: Mail, globe: Globe, phone: Phone, pin: MapPin,
-  bell: Bell, check: Check, clock: Clock,
+  bell: Bell, check: Check, clock: Clock, sparkles: Sparkles, makeover: Sparkles,
 };
 
 function XGlyph({ size = 18 }) {
