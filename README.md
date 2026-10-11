@@ -1,4 +1,4 @@
-# Samsy Frontend (React + Vite)
+# samy_uni — Samsy Frontend (React + Vite)
 
 ## Run
 ```bash
